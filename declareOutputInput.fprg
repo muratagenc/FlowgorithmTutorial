@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mgenc"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-16 01:16:07 PM"/>
+        <attribute name="created" value="bWdlbmM7REVTS1RPUC01QTlRMjkxOzIwMTktMDMtMTY7MTI6NDM6MzcgUE07MjgwMw=="/>
+        <attribute name="edited" value="bWdlbmM7REVTS1RPUC01QTlRMjkxOzIwMTktMDMtMTY7MDE6MTY6MDcgUE07MTsyOTA2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="firstName, lastName, streetAddress, city, state" type="String" array="False" size=""/>
+            <output expression="&quot;What is your first name?&quot;" newline="True"/>
+            <input variable="firstName"/>
+            <declare name="zipCode" type="Integer" array="False" size=""/>
+            <output expression="&quot;What is your last name?&quot;" newline="True"/>
+            <input variable="lastName"/>
+            <output expression="&quot;What is your street address?&quot;" newline="True"/>
+            <input variable="streetAddress"/>
+            <output expression="&quot;Which city you live in?&quot;" newline="True"/>
+            <input variable="city"/>
+            <output expression="&quot;Which state you live in?&quot;" newline="True"/>
+            <input variable="state"/>
+            <output expression="&quot;What is your five digit zip code?&quot;" newline="True"/>
+            <input variable="zipCode"/>
+            <output expression="lastName &amp; &quot;, &quot; &amp; firstName" newline="True"/>
+            <output expression="streetAddress &amp; &quot;, &quot; &amp; state &amp; &quot;, &quot;  &amp; zipCode" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
