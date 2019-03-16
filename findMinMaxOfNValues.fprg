@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mgenc"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-16 12:15:01 PM"/>
+        <attribute name="created" value="bWdlbmM7REVTS1RPUC01QTlRMjkxOzIwMTktMDMtMTY7MTE6Mjg6NTEgQU07Mjc4Ng=="/>
+        <attribute name="edited" value="bWdlbmM7REVTS1RPUC01QTlRMjkxOzIwMTktMDMtMTY7MTI6MTU6MDEgUE07MjsyOTAy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="1. Ask user how many numbers to enter,&#13;&#10;save it to a variable&#13;&#10;numberOfEntries"/>
+            <declare name="numberOfElements" type="Integer" array="False" size=""/>
+            <output expression="&quot;How many numbers you have?&quot;" newline="True"/>
+            <input variable="numberOfElements"/>
+            <comment text="2. prepare minimum and maximum variables with default values&#13;&#10;minimum = 99999&#13;&#10;maximum = -99999"/>
+            <declare name="minimum" type="Integer" array="False" size=""/>
+            <declare name="maximum" type="Integer" array="False" size=""/>
+            <assign variable="minimum" expression="99999"/>
+            <assign variable="maximum" expression="-99999"/>
+            <comment text="3. go into a loop, ask user to enter an integer number"/>
+            <declare name="counter" type="Integer" array="False" size=""/>
+            <declare name="userNumber" type="Integer" array="False" size=""/>
+            <for variable="counter" start="1" end="numberOfElements" direction="inc" step="1">
+                <comment text="4. compare it with minimum and maximum values, update minimum and maximum variables if necessary&#13;&#10;&#13;&#10;5. keep looping until numberOfEntries reached"/>
+                <output expression="&quot;Enter integer number &quot; &amp; counter &amp; &quot;: (&lt;99,999)&quot;" newline="True"/>
+                <input variable="userNumber"/>
+                <if expression="userNumber &lt; minimum">
+                    <then>
+                        <assign variable="minimum" expression="userNumber"/>
+                    </then>
+                    <else>
+                        <if expression="userNumber &gt; maximum">
+                            <then>
+                                <assign variable="maximum" expression="userNumber"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </else>
+                </if>
+            </for>
+            <comment text="6. Print the results for minimum and maximum"/>
+            <output expression="&quot;Minimum : &quot; &amp; minimum" newline="True"/>
+            <output expression="&quot;Maximum: &quot; &amp; maximum" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
