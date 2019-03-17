@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mgenc"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-17 12:35:54 PM"/>
+        <attribute name="created" value="bWdlbmM7REVTS1RPUC01QTlRMjkxOzIwMTktMDMtMTc7MTI6MzI6MzIgUE07Mjc5Nw=="/>
+        <attribute name="edited" value="bWdlbmM7REVTS1RPUC01QTlRMjkxOzIwMTktMDMtMTc7MTI6MzU6NTQgUE07MTsyOTEy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;are you hungry?&quot;" newline="True"/>
+            <declare name="answer" type="String" array="False" size=""/>
+            <input variable="answer"/>
+            <if expression="answer == &quot;yes&quot;">
+                <then>
+                    <output expression="&quot;take a break and eat something&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;no need to eat&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

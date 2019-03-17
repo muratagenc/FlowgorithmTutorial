@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mgenc"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-17 12:58:26 PM"/>
+        <attribute name="created" value="bWdlbmM7REVTS1RPUC01QTlRMjkxOzIwMTktMDMtMTc7MTI6NTQ6MDMgUE07Mjc5OQ=="/>
+        <attribute name="edited" value="bWdlbmM7REVTS1RPUC01QTlRMjkxOzIwMTktMDMtMTc7MTI6NTg6MjYgUE07MTsyOTE2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Do you have enough cash to pay for it?&quot;" newline="True"/>
+            <declare name="answer1" type="String" array="False" size=""/>
+            <input variable="answer1"/>
+            <output expression="&quot;Do you have a credit card?&quot;" newline="True"/>
+            <declare name="answer2" type="String" array="False" size=""/>
+            <input variable="answer2"/>
+            <if expression="answer1 == &quot;yes&quot; or answer2 == &quot;yes&quot;">
+                <then>
+                    <output expression="&quot;you can use cash or credit card, that's great!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;sorry, you can't pay for it at the moment&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

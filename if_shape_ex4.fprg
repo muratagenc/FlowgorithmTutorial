@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mgenc"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-17 12:50:26 PM"/>
+        <attribute name="created" value="bWdlbmM7REVTS1RPUC01QTlRMjkxOzIwMTktMDMtMTc7MTI6NDI6MDcgUE07MjgwMA=="/>
+        <attribute name="edited" value="bWdlbmM7REVTS1RPUC01QTlRMjkxOzIwMTktMDMtMTc7MTI6NTA6MjYgUE07MTsyOTA4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;how old are you?&quot;" newline="True"/>
+            <declare name="age" type="Integer" array="False" size=""/>
+            <input variable="age"/>
+            <declare name="ageValid" type="Boolean" array="False" size=""/>
+            <if expression="age == 18 or age &gt; 18">
+                <then>
+                    <assign variable="ageValid" expression="true"/>
+                </then>
+                <else>
+                    <assign variable="ageValid" expression="false"/>
+                </else>
+            </if>
+            <output expression="&quot;are you registered? (yes/no)&quot;" newline="True"/>
+            <declare name="registered" type="String" array="False" size=""/>
+            <input variable="registered"/>
+            <if expression="ageValid == true and registered == &quot;yes&quot;">
+                <then>
+                    <output expression="&quot;you can vote&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;sorry, either you are younger than 18, or not registered. you cannot vote&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
