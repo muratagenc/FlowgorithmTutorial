@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mgenc"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-17 02:23:02 PM"/>
+        <attribute name="created" value="bWdlbmM7REVTS1RPUC01QTlRMjkxOzIwMTktMDMtMTc7MDI6MTQ6NTggUE07MjgwNA=="/>
+        <attribute name="edited" value="bWdlbmM7REVTS1RPUC01QTlRMjkxOzIwMTktMDMtMTc7MDI6MjM6MDIgUE07MTsyOTAx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="loopCounter" type="Integer" array="False" size=""/>
+            <for variable="loopCounter" start="48" end="126" direction="inc" step="1">
+                <output expression="loopCounter &amp; &quot;: &quot; &amp; toChar(loopCounter)" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
