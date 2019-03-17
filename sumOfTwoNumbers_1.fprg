@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mgenc"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-17 01:37:52 PM"/>
+        <attribute name="created" value="bWdlbmM7REVTS1RPUC01QTlRMjkxOzIwMTktMDMtMTc7MDE6MjY6MDkgUE07MjgwMg=="/>
+        <attribute name="edited" value="bWdlbmM7REVTS1RPUC01QTlRMjkxOzIwMTktMDMtMTc7MDE6Mzc6NTIgUE07MjsyOTEx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Please enter the first number&quot;" newline="True"/>
+            <declare name="firstNumber" type="Integer" array="False" size=""/>
+            <input variable="firstNumber"/>
+            <output expression="&quot;Enter the second number&quot;" newline="True"/>
+            <declare name="secondNumber" type="Integer" array="False" size=""/>
+            <input variable="secondNumber"/>
+            <output expression="&quot;Sum of &quot; &amp; firstNumber &amp; &quot; and &quot; &amp; secondNumber &amp; &quot; is &quot; &amp; (firstNumber + secondNumber)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
