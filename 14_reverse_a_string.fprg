@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mgenc"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-17 03:57:01 PM"/>
+        <attribute name="created" value="bWdlbmM7REVTS1RPUC01QTlRMjkxOzIwMTktMDMtMTc7MDI6Mjg6NTggUE07MjgwOQ=="/>
+        <attribute name="edited" value="bWdlbmM7REVTS1RPUC01QTlRMjkxOzIwMTktMDMtMTc7MDM6NTc6MDEgUE07MTsyOTA4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Please enter a String&quot;" newline="True"/>
+            <declare name="userMessage" type="String" array="False" size=""/>
+            <input variable="userMessage"/>
+            <declare name="messageLength" type="Integer" array="False" size=""/>
+            <assign variable="messageLength" expression="Len(userMessage)"/>
+            <declare name="reversedMessage" type="String" array="False" size=""/>
+            <assign variable="reversedMessage" expression="&quot;&quot;"/>
+            <declare name="loopCount" type="Integer" array="False" size=""/>
+            <for variable="loopCount" start="messageLength - 1" end="0" direction="dec" step="1">
+                <assign variable="reversedMessage" expression="reversedMessage &amp; Char(userMessage, loopCount)"/>
+            </for>
+            <output expression="userMessage &amp; &quot;-&gt;&quot; &amp; reversedMessage" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
