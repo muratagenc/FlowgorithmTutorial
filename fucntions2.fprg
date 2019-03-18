@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mgenc"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-17 07:12:53 PM"/>
+        <attribute name="created" value="bWdlbmM7REVTS1RPUC01QTlRMjkxOzIwMTktMDMtMTc7MDc6MDU6MDUgUE07MjgwMQ=="/>
+        <attribute name="edited" value="bWdlbmM7REVTS1RPUC01QTlRMjkxOzIwMTktMDMtMTc7MDc6MTI6NTMgUE07MTsyOTEw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="username" type="String" array="False" size=""/>
+            <declare name="password" type="String" array="False" size=""/>
+            <output expression="&quot;enter your username&quot;" newline="True"/>
+            <input variable="username"/>
+            <output expression="&quot;enter your password&quot;" newline="True"/>
+            <input variable="password"/>
+            <call expression="ValidateUser(username, password)"/>
+            <output expression="&quot;thanks for using my app&quot;" newline="True"/>
+        </body>
+    </function>
+    <function name="ValidateUser" type="None" variable="">
+        <parameters>
+            <parameter name="username" type="String" array="False"/>
+            <parameter name="password" type="String" array="False"/>
+        </parameters>
+        <body>
+            <declare name="actualUsername, actualPassword" type="String" array="False" size=""/>
+            <assign variable="actualUsername" expression="&quot;johnb&quot;"/>
+            <assign variable="actualPassword" expression="&quot;abc123&quot;"/>
+            <if expression="username == actualUsername and password == actualPassword">
+                <then>
+                    <output expression="&quot;Valid!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Invalid!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

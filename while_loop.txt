@@ -1,0 +1,6 @@
+WHILE loop
+
+checks a condition, if it is TRUE, goes into a loop, and completes a task, then checks the condition again, if it is still TRUE keeps looping. Repeats this until the condition becomes FALSE.
+
+example;
+check a username password, if it is entered incorrectly, keep asking 3 times. if the user enters username/password incorrectly in all 3 attempts, "user invalid!"

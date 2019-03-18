@@ -1,0 +1,25 @@
+FUNCTIONS in Flowgorithm
+
+Separate flowgorithm charts that completes a specific task. They can take one or more arguments, and they can return one single value after task completion. Some possible function structures are;
+
+1. Functions that don't take arguments, and don't return a value
+	they complete a task, and most likely print a message on screen at the end.
+
+example:
+a function that asks for a username and password, then prints a message if it is valid user credentials or not. (use function call shape)
+
+2. Functions that take arguments, but don't return a value
+	they take one or more arguments, use their values in the task, most likely print a message on screen at the end.
+
+a function that takes username and password as arguments, then prints a message if it is valid user credentials or not. (use function call shape)
+
+3. Functions that both take arguments and return a value
+	widely used structure. it will take one or more arguments, use them in task completion, and return a resulting value.
+
+example:
+a function takes username and passord as arguments, and returns true if the user valid, false if invalid. (use the function in an assignment)
+
+How to find the size of an String?
+myString = "JohnB"
+
+

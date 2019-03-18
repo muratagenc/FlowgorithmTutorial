@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mgenc"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-17 08:20:02 PM"/>
+        <attribute name="created" value="bWdlbmM7REVTS1RPUC01QTlRMjkxOzIwMTktMDMtMTc7MDc6MDU6MDUgUE07MjgwMQ=="/>
+        <attribute name="edited" value="bWdlbmM7REVTS1RPUC01QTlRMjkxOzIwMTktMDMtMTc7MDg6MjA6MDIgUE07NzsyOTEw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="username, password" type="String" array="False" size=""/>
+            <declare name="isValid" type="Boolean" array="False" size=""/>
+            <assign variable="isValid" expression="false"/>
+            <declare name="numberOfAttempts" type="Integer" array="False" size=""/>
+            <assign variable="numberOfAttempts" expression="0"/>
+            <while expression="isValid == false and numberOfAttempts &lt; 3">
+                <output expression="&quot;enter username&quot;" newline="True"/>
+                <input variable="username"/>
+                <output expression="&quot;enter password&quot;" newline="True"/>
+                <input variable="password"/>
+                <assign variable="isValid" expression="ValidateUser(username, password)"/>
+                <assign variable="numberOfAttempts" expression="numberOfAttempts + 1"/>
+                <output expression="numberOfAttempts &amp; &quot;, &quot; &amp; isValid" newline="True"/>
+            </while>
+            <if expression="isValid == true">
+                <then>
+                    <output expression="&quot;Valid user&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;you have failed to enter a valid username/password in 3 attempts!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="ValidateUser" type="Boolean" variable="validationResult">
+        <parameters>
+            <parameter name="username" type="String" array="False"/>
+            <parameter name="password" type="String" array="False"/>
+        </parameters>
+        <body>
+            <declare name="validationResult" type="Boolean" array="False" size=""/>
+            <declare name="actualUsername, actualPassword" type="String" array="False" size=""/>
+            <assign variable="actualUsername" expression="&quot;johnb&quot;"/>
+            <assign variable="actualPassword" expression="&quot;abc123&quot;"/>
+            <if expression="username == actualUsername and password == actualPassword">
+                <then>
+                    <assign variable="validationResult" expression="true"/>
+                </then>
+                <else>
+                    <assign variable="validationResult" expression="false"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
