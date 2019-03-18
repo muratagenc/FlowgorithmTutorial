@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mgenc"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-17 06:18:27 PM"/>
+        <attribute name="created" value="bWdlbmM7REVTS1RPUC01QTlRMjkxOzIwMTktMDMtMTc7MDU6MzU6MzQgUE07MjgwNA=="/>
+        <attribute name="edited" value="bWdlbmM7REVTS1RPUC01QTlRMjkxOzIwMTktMDMtMTc7MDY6MTg6MjcgUE07MTsyOTE2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Real" array="False" size=""/>
+            <declare name="b" type="Real" array="False" size=""/>
+            <declare name="c" type="Real" array="False" size=""/>
+            <declare name="delta" type="Real" array="False" size=""/>
+            <declare name="rootOne" type="Real" array="False" size=""/>
+            <declare name="rootTwo" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter a&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Enter b&quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;Enter c&quot;" newline="True"/>
+            <input variable="c"/>
+            <assign variable="delta" expression="(b^2) - (4 * a * c)"/>
+            <output expression="a &amp; &quot;, &quot; &amp; b &amp; &quot;, &quot; &amp; c &amp; &quot;, &quot; &amp; delta" newline="True"/>
+            <if expression="delta &lt; 0">
+                <then>
+                    <output expression="&quot;There is no root&quot;" newline="True"/>
+                </then>
+                <else>
+                    <comment text="delta &gt; 0 OR delta = 0"/>
+                    <if expression="delta &gt; 0">
+                        <then>
+                            <comment text="delta &gt; 0"/>
+                            <assign variable="rootOne" expression="(-b + Sqrt(delta))/(2 * a)"/>
+                            <assign variable="rootTwo" expression="(-b - Sqrt(delta))/(2 * a)"/>
+                            <output expression="&quot;Root one: &quot; &amp; rootOne" newline="True"/>
+                            <output expression="&quot;Root two: &quot; &amp; rootTwo" newline="True"/>
+                        </then>
+                        <else>
+                            <comment text="delta = 0"/>
+                            <assign variable="rootOne" expression="(-b)/(2*a)"/>
+                            <output expression="&quot;Roots are identical : &quot; &amp; rootOne" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;Thanks for using my application&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
