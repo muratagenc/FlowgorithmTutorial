@@ -1,0 +1,33 @@
+Solving Quadratic Equations
+
+y = ax^2 + bx + c
+
+delta = b^2-4ac
+
+if delta > 0:
+	root1 = (-b + sqrt(delta))/2a
+	root2 = (-b - sqrt(delta))/2a
+if delta = 0:
+	root1 = root2 = -b/2a
+if delta < 0:
+	there is no root
+
+example:
+y = 2x^2 - x - 6
+2(2^2) - 2 - 6 =? 0
+2*4 - 2 - 6 =? 0
+8-2-6 = 0
+
+delta = (-1)^2-4*2*(-6)
+	= 1+48
+	= 49
+root1 = (-(-1) + 7)/(2*2)
+	= 8/4
+	= 2
+root2 = (-(-1)-7)/(2*2)
+	= -6/4
+	= -1.5
+
+(x - 2)(x + 6)=x^2 + 4x - 12
+r1 = 2
+r2 = -6
