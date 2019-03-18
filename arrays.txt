@@ -1,0 +1,52 @@
+ARRAYS
+It's a collection or set of SAME TYPE values. 
+age = 10
+
+Integer array;
+A = {10, 55, 45, 99} 
+
+String array;
+B = {"John", "Kelly", "Peter"}
+
+Real array;
+C = {1.45, 6.33, 8.99, 0.175, 3.145}
+
+Boolean array;
+D = {true, true, false, true, false}
+
+Arrays, like Strings, have INDEX VALUES for each member, starting from 0.
+
+A = {76, 55, 45, 99}
+
+index of 76 is 0,
+index of 55 is 1... 
+index = size - 1
+
+Assigning values to array members:
+A[0] = 76
+A[1] = 55
+A[2] = 45
+A[3] = 99
+
+Reading values from array members:
+
+firstNumber = A[0] //firstNumber = 76
+secondNumber = A[1] //secondNumber = 55
+thirdNumber = A[2] //thirdNumber = 45
+fourthNumber = A[3] //fourthNumber = 99
+
+How to find the size of an array?
+
+size = number of items in an array
+
+A = {10, 55, 45, 99}
+B = {"John", "Kelly", "Peter"}
+C = {1.45, 6.33, 8.99, 0.175, 3.145}
+D = {true, true, false, true, false}
+
+size of A is 4,
+size of B is 3,
+Size(C) = 5 --> built in function Size()
+Size(D)= 5
+
+Random(n): generate a random value between 0 and n-1. Random(9) 0-8
