@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mgenc"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-17 05:18:30 PM"/>
+        <attribute name="created" value="bWdlbmM7REVTS1RPUC01QTlRMjkxOzIwMTktMDMtMTc7MDU6MDA6NDYgUE07Mjc5OQ=="/>
+        <attribute name="edited" value="bWdlbmM7REVTS1RPUC01QTlRMjkxOzIwMTktMDMtMTc7MDU6MTg6MzAgUE07MTsyOTA5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="myIntArray" type="Integer" array="True" size="4"/>
+            <assign variable="myIntArray[0]" expression="10"/>
+            <assign variable="myIntArray[1]" expression="67"/>
+            <assign variable="myIntArray[2]" expression="23"/>
+            <assign variable="myIntArray[3]" expression="98"/>
+            <output expression="myIntArray[0]" newline="True"/>
+            <output expression="myIntArray[1]" newline="True"/>
+            <output expression="myIntArray[2]" newline="True"/>
+            <output expression="myIntArray[3]" newline="True"/>
+            <output expression="&quot;*********************&quot;" newline="True"/>
+            <declare name="loopCounter" type="Integer" array="False" size=""/>
+            <for variable="loopCounter" start="0" end="Size(myIntArray) - 1" direction="inc" step="1">
+                <output expression="myIntArray[loopCounter]" newline="True"/>
+            </for>
+            <output expression="&quot;*********************&quot;" newline="True"/>
+            <for variable="loopCounter" start="Size(myIntArray) - 1" end="0" direction="dec" step="1">
+                <output expression="myIntArray[loopCounter]" newline="True"/>
+            </for>
+            <output expression="&quot;*********************&quot;" newline="True"/>
+            <assign variable="myIntArray[0]" expression="876"/>
+            <for variable="loopCounter" start="Size(myIntArray) - 1" end="0" direction="dec" step="1">
+                <output expression="myIntArray[loopCounter]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

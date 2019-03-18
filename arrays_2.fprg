@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mgenc"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-17 05:23:53 PM"/>
+        <attribute name="created" value="bWdlbmM7REVTS1RPUC01QTlRMjkxOzIwMTktMDMtMTc7MDU6MTg6MzQgUE07MjgwNQ=="/>
+        <attribute name="edited" value="bWdlbmM7REVTS1RPUC01QTlRMjkxOzIwMTktMDMtMTc7MDU6MjM6NTMgUE07MTsyOTEw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="addressBook" type="String" array="True" size="4"/>
+            <declare name="name" type="String" array="False" size=""/>
+            <declare name="loopCounter" type="Integer" array="False" size=""/>
+            <for variable="loopCounter" start="0" end="Size(addressBook) - 1" direction="inc" step="1">
+                <output expression="&quot;Enter a name&quot;" newline="True"/>
+                <input variable="name"/>
+                <assign variable="addressBook[loopCounter]" expression="name"/>
+            </for>
+            <output expression="addressBook[0]" newline="True"/>
+            <output expression="addressBook[1]" newline="True"/>
+            <output expression="addressBook[2]" newline="True"/>
+            <output expression="addressBook[3]" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
